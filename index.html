@@ -1,2 +1,49 @@
-<h1>Hello World!</h1>
-<p>This is a domain for Yixboost NL, if you found this, this site is coming soon....</p>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy | Yixboost Games</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/cdn/fontawesome/css/all.css">
+  </head>
+
+  <body>
+    <div class="browser-container">
+      <div class="tab-bar-container">
+        <div class="tab-bar"></div>
+        <button class="new-tab-button">+</button>
+      </div>
+      <div class="url-bar-container">
+        <button class="icon-button" id="backButton">
+          <i class="fa-sharp fa-regular fa-arrow-left"></i>
+        </button>
+        <button class="icon-button" id="forwardButton">
+          <i class="fa-sharp fa-regular fa-arrow-right"></i>
+        </button>
+        <button class="icon-button" id="reloadButton">
+          <i class="fa-sharp fa-regular fa-rotate-right"></i>
+        </button>
+        <input type="text" class="url-input" placeholder="Search or type URL" readonly="">
+        <button class="icon-button" id="menuButton" style="margin: 0">
+          <i class="fa-sharp fa-regular fa-ellipsis-v"></i>
+        </button>
+      </div>
+      <div class="browser-window">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+    <div class="menu-context" style="display: none">
+      <ul>
+        <small>Browser</small>
+        <div class="divider"></div>
+        <li onclick="openTab('frame')">New Tab</li>
+        <li onclick="location.href = location.href">Restart Browser</li>
+      </ul>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/context-menu.js"></script>
+    <script src="js/extra.js"></script>
+  
+
+</body>
+</html>
