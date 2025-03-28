@@ -212,6 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (urlParams.has('q')) {
     const searchTerm = urlParams.get('q');
     document.querySelector(".url-input").value = searchTerm;
-    activeTab.iframe.src = "frame/?url=" + encodeURIComponent(searchTerm);
+    activeTab.iframe.src = "https://naslambers.synology.me/Yixboost-Games/proxy/frame/?url=" + encodeURIComponent(searchTerm);
   }
 });
